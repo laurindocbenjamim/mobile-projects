@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">BeYou</string>
+    <string name="title_tablet_dashboard">Vista geral da aplicação</string>
+    <string name="subtitle_tablet_dashboard">O widget flutuante é exibido sobre qualquer aplicação. Pode ser arrastado livremente pelo ecrã e alterna entre avatar e vídeo da câmara.</string>
+    <string name="status_permissions_title">Estado das Permissões</string>
+    <string name="perm_overlay_label">Permissão de Sobreposição (Overlay)</string>
+    <string name="perm_camera_label">Permissão de Acesso à Câmara</string>
+    <string name="btn_grant_overlay">Ativar Sobreposição</string>
+    <string name="btn_grant_camera">Permitir Câmara</string>
+    <string name="btn_start_widget">Iniciar Widget Flutuante</string>
+    <string name="btn_stop_widget">Parar Widget Flutuante</string>
+    <string name="status_granted">Concedida ✓</string>
+    <string name="status_denied">Pendente (Requer Ativação)</string>
+    <string name="notification_channel_name">Serviço do Widget Flutuante</string>
+    <string name="notification_title">Widget BeYou Ativo no Ecrã</string>
+    <string name="notification_text">Toque para voltar à aplicação ou use o widget circular</string>
+    <string name="avatar_description">Avatar de perfil do utilizador com anel luminoso</string>
+    <string name="camera_preview_description">Feed de vídeo da câmara em tempo real</string>
+    <string name="mode_avatar_label">Avatar</string>
+    <string name="mode_camera_label">Câmara</string>
+
+    <!-- Personalização do Avatar -->
+    <string name="avatar_custom_title">Personalização do Avatar</string>
+    <string name="avatar_custom_desc">Escolha uma fotografia da sua galeria ou use a predefinida</string>
+    <string name="btn_upload_avatar">Carregar Foto</string>
+    <string name="btn_reset_avatar">Predefinida</string>
+    <string name="msg_avatar_updated">Avatar personalizado atualizado com sucesso!</string>
+    <string name="msg_avatar_reset">Avatar predefinido restaurado.</string>
+    <string name="msg_avatar_error">Não foi possível carregar a imagem selecionada.</string>
+
+    <!-- Especificações do conceito visual BeYou -->
+    <string name="feat_widget_title">Widget flutuante circular</string>
+    <string name="feat_widget_desc">Com avatar ou vídeo em tempo real</string>
+    <string name="feat_drag_title">Arrastar</string>
+    <string name="feat_drag_desc">Mova o widget para qualquer posição no ecrã</string>
+    <string name="feat_toggle_title">Alternar</string>
+    <string name="feat_toggle_desc">Duplo toque ou botão de alternância</string>
+    <string name="feat_status_title">Indicador de estado</string>
+    <string name="feat_status_desc">Mostra se está no modo Avatar ou Câmara</string>
+
+    <!-- Atue Neon Dashboard Strings -->
+    <string name="title_atue">BeYou</string>
+    <string name="subtitle_atue">Avatar e câmara flutuantes</string>
+    <string name="btn_settings">Configurações</string>
+
+    <string name="card_permissions_title">Permissões</string>
+    <string name="card_permissions_subtitle">Gerencie as permissões necessárias para o funcionamento do widget.</string>
+    <string name="perm_overlay_title">Sobreposição</string>
+    <string name="perm_overlay_desc">Permite que o widget flutue sobre outras aplicações.</string>
+    <string name="perm_camera_title">Câmara</string>
+    <string name="perm_camera_desc">Permite o acesso ao feed de video da câmara.</string>
+    <string name="status_granted_label">Concedida</string>
+    <string name="status_pending_label">Pendente</string>
+    <string name="btn_manage">Gerir</string>
+
+    <string name="card_avatar_title">Avatar</string>
+    <string name="card_avatar_subtitle">Personalize a imagem que aparece no widget.</string>
+    <string name="btn_choose_photo">Escolher fotografia</string>
+    <string name="btn_restore_default">Restaurar padrão</string>
+
+    <string name="card_widget_title">Widget flutuante</string>
+    <string name="card_widget_subtitle">Configure o comportamento e a aparência do widget.</string>
+    <string name="row_initial_mode_title">Modo inicial</string>
+    <string name="row_initial_mode_desc">Escolha o conteúdo que será exibido ao iniciar.</string>
+    <string name="segment_avatar">Avatar</string>
+    <string name="segment_camera">Câmara</string>
+    <string name="row_size_title">Tamanho</string>
+    <string name="row_size_desc">Defina o tamanho do widget no ecrã.</string>
+    <string name="size_small">Pequeno</string>
+    <string name="size_medium">Médio</string>
+    <string name="size_large">Grande</string>
+
+    <string name="btn_start_widget_action">Iniciar widget</string>
+    <string name="btn_stop_widget_action">Parar</string>
+
+    <!-- Theme Strings -->
+    <string name="btn_theme">Tema</string>
+    <string name="theme_cyan">Néon Ciano</string>
+    <string name="theme_purple">Néon Violeta</string>
+    <string name="theme_emerald">Néon Matrix</string>
+    <string name="theme_light">Modo Claro</string>
+</resources>

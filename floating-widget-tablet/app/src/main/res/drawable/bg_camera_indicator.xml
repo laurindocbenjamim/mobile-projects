@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Halo exterior verde de transmissão ativa -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4010B981" />
+        </shape>
+    </item>
+    <!-- Ponto nítido verde esmeralda com contorno fino -->
+    <item
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp">
+        <shape android:shape="oval">
+            <solid android:color="#00E676" />
+            <stroke
+                android:width="1.5dp"
+                android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

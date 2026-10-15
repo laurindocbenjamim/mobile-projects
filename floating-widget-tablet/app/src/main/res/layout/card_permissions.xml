@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPermissionsContainer"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@drawable/bg_card_neon"
+    android:orientation="vertical"
+    android:paddingHorizontal="18dp"
+    android:paddingVertical="12dp">
+
+    <!-- Header: Ícone Shield + Título + Subtítulo -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:background="@drawable/bg_badge_icon_circle"
+            android:padding="7dp"
+            android:src="@drawable/ic_shield_permission"
+            app:tint="@color/luminous_blue" />
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="12dp" android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/card_permissions_title"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp" android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/card_permissions_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent" android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="#142C4D" />
+
+    <!-- Item 1: Sobreposição -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp" android:layout_height="26dp"
+            android:src="@drawable/ic_window_overlay"
+            app:tint="@color/luminous_blue" />
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/perm_overlay_title"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/perm_overlay_desc"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical" android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dotOverlayStatus"
+                android:layout_width="8dp" android:layout_height="8dp"
+                android:background="@drawable/bg_status_dot_green" />
+
+            <TextView
+                android:id="@+id/tvOverlayStatusText"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/status_granted_label"
+                android:textColor="@color/dot_granted"
+                android:textSize="13sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageOverlay"
+            android:layout_width="wrap_content" android:layout_height="38dp"
+            android:background="@drawable/bg_pill_manage"
+            android:paddingHorizontal="16dp"
+            android:text="@string/btn_manage"
+            android:textAllCaps="false"
+            android:textColor="@color/luminous_blue"
+            android:textSize="13sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_settings_gear"
+            app:iconPadding="6dp" app:iconSize="16dp"
+            app:iconTint="@color/luminous_blue" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent" android:layout_height="1dp"
+        android:layout_marginVertical="8dp"
+        android:background="#142C4D" />
+
+    <!-- Item 2: Câmara -->
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical" android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp" android:layout_height="26dp"
+            android:src="@drawable/ic_camera_simple"
+            app:tint="@color/luminous_blue" />
+
+        <LinearLayout
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_marginStart="14dp" android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/perm_camera_title"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/perm_camera_desc"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_vertical" android:orientation="horizontal">
+
+            <View
+                android:id="@+id/dotCameraStatus"
+                android:layout_width="8dp" android:layout_height="8dp"
+                android:background="@drawable/bg_status_dot_green" />
+
+            <TextView
+                android:id="@+id/tvCameraStatusText"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/status_granted_label"
+                android:textColor="@color/dot_granted"
+                android:textSize="13sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnManageCamera"
+            android:layout_width="wrap_content" android:layout_height="38dp"
+            android:background="@drawable/bg_pill_manage"
+            android:paddingHorizontal="16dp"
+            android:text="@string/btn_manage"
+            android:textAllCaps="false"
+            android:textColor="@color/luminous_blue"
+            android:textSize="13sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_settings_gear"
+            app:iconPadding="6dp" app:iconSize="16dp"
+            app:iconTint="@color/luminous_blue" />
+    </LinearLayout>
+</LinearLayout>

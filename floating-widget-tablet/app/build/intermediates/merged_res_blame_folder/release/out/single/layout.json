@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/layout_avatar_customizer.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/layout_avatar_customizer.xml"
+    },
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/activity_main.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/card_permissions.xml",
+        "source": "com.antigravity.floatingwidget.app-main-40:/layout/card_permissions.xml"
+    },
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/layout_bottom_guides.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/layout_bottom_guides.xml"
+    },
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/layout_features_sidebar.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/layout_features_sidebar.xml"
+    },
+    {
+        "merged": "com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/card_widget_settings.xml",
+        "source": "com.antigravity.floatingwidget.app-main-40:/layout/card_widget_settings.xml"
+    },
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/layout_floating_widget.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/layout_floating_widget.xml"
+    },
+    {
+        "merged": "com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/activity_main.xml",
+        "source": "com.antigravity.floatingwidget.app-main-40:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/card_avatar_settings.xml",
+        "source": "com.antigravity.floatingwidget.app-main-40:/layout/card_avatar_settings.xml"
+    },
+    {
+        "merged": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-mergeReleaseResources-38:/layout/layout_status_pill.xml",
+        "source": "/Users/fetiwaetika/.gradle/daemon/8.5/com.antigravity.floatingwidget.app-main-40:/layout/layout_status_pill.xml"
+    }
+]

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootFloatingContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:padding="12dp">
+
+    <!-- Anel exterior com efeito de halo azul luminoso contínuo -->
+    <View
+        android:id="@+id/luminousGlowRing"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_luminous_glow" />
+
+    <!-- CardView com recorte perfeitamente circular de 180dp x 180dp -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/circularCard"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/surface_dark"
+        app:cardCornerRadius="90dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Feed da câmara em tempo real via Jetpack CameraX (sempre pronto) -->
+            <androidx.camera.view.PreviewView
+                android:id="@+id/cameraPreviewView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/camera_preview_description"
+                android:visibility="visible"
+                app:implementationMode="compatible"
+                app:scaleType="fillCenter" />
+
+            <!-- Imagem de perfil de alta qualidade (Avatar - cobre a câmara no Modo Avatar) -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/avatarImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/avatar_description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_profile"
+                app:shapeAppearanceOverlay="@style/CircularImageViewShape" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Indicador de estado: Ponto verde no Modo Câmara ativa -->
+    <View
+        android:id="@+id/cameraActiveIndicator"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/bg_camera_indicator"
+        android:elevation="12dp"
+        android:visibility="gone" />
+
+    <!-- Botão de Ação Rápida circular para alternar entre Avatar e Câmara -->
+    <ImageButton
+        android:id="@+id/btnToggleMode"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_toggle_button"
+        android:contentDescription="@string/camera_preview_description"
+        android:elevation="14dp"
+        android:padding="11dp"
+        android:src="@drawable/ic_camera_switch" />
+
+</FrameLayout>

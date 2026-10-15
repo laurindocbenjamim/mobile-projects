@@ -1,0 +1,184 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.antigravity.floatingwidget"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="33"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Requisitos de Permissões: Overlay de Sistema e Acesso à Câmara -->
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:6:5-78
+12-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:6:22-75
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:7:5-65
+13-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:7:22-62
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:8:5-77
+14-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+15-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:9:5-84
+15-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:9:22-81
+16
+17    <!-- Suporte a câmaras físicas e câmaras virtuais (ex: DroidCam) -->
+18    <uses-feature
+18-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:12:5-14:36
+19        android:name="android.hardware.camera"
+19-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:13:9-47
+20        android:required="false" />
+20-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:14:9-33
+21    <uses-feature
+21-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:15:5-17:36
+22        android:name="android.hardware.camera.autofocus"
+22-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:16:9-57
+23        android:required="false" />
+23-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:17:9-33
+24
+25    <permission
+25-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+26        android:name="com.antigravity.floatingwidget.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+26-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+27        android:protectionLevel="signature" />
+27-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+28
+29    <uses-permission android:name="com.antigravity.floatingwidget.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+29-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+29-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+30
+31    <application
+31-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:19:5-45:19
+32        android:allowBackup="true"
+32-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:20:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.12.0] /Users/fetiwaetika/.gradle/caches/transforms-3/440a64c1659b3784956be1ef27019da1/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:21:9-43
+37        android:label="@string/app_name"
+37-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:22:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:23:9-54
+39        android:supportsRtl="true"
+39-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:24:9-35
+40        android:theme="@style/Theme.FloatingWidgetTablet" >
+40-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:25:9-58
+41        <activity
+41-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:27:9-36:20
+42            android:name="com.antigravity.floatingwidget.MainActivity"
+42-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:28:13-41
+43            android:configChanges="orientation|screenSize|screenLayout"
+43-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:30:13-72
+44            android:exported="true"
+44-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:29:13-36
+45            android:theme="@style/Theme.FloatingWidgetTablet" >
+45-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:31:13-62
+46            <intent-filter>
+46-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:32:13-35:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:33:17-69
+47-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:33:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:34:17-77
+49-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:34:27-74
+50            </intent-filter>
+51        </activity>
+52
+53        <!-- Serviço do Widget Flutuante com Lifecycle e Camera Foreground Type -->
+54        <service
+54-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:39:9-43:54
+55            android:name="com.antigravity.floatingwidget.service.FloatingWidgetService"
+55-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:40:13-58
+56            android:enabled="true"
+56-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:41:13-35
+57            android:exported="false"
+57-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:42:13-37
+58            android:foregroundServiceType="camera" />
+58-->/Users/fetiwaetika/MobileProjects/floating-widget-tablet/app/src/main/AndroidManifest.xml:43:13-51
+59        <service
+59-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:24:9-33:19
+60            android:name="androidx.camera.core.impl.MetadataHolderService"
+60-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:25:13-75
+61            android:enabled="false"
+61-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:26:13-36
+62            android:exported="false" >
+62-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:30:13-32:89
+64                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+64-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:31:17-103
+65                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+65-->[androidx.camera:camera-camera2:1.3.2] /Users/fetiwaetika/.gradle/caches/transforms-3/468ae3e27b1ebbd1e4bb072a5cd9ddf2/transformed/camera-camera2-1.3.2/AndroidManifest.xml:32:17-86
+66        </service>
+67
+68        <provider
+68-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+69            android:name="androidx.startup.InitializationProvider"
+69-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+70            android:authorities="com.antigravity.floatingwidget.androidx-startup"
+70-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+71            android:exported="false" >
+71-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+72            <meta-data
+72-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+73-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+74                android:value="androidx.startup" />
+74-->[androidx.emoji2:emoji2:1.2.0] /Users/fetiwaetika/.gradle/caches/transforms-3/40af677edc9e981bf1ec9bb11c8b1d32/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+75            <meta-data
+75-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/fetiwaetika/.gradle/caches/transforms-3/01096349b0936ba7f741e909295c017b/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/fetiwaetika/.gradle/caches/transforms-3/01096349b0936ba7f741e909295c017b/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+77                android:value="androidx.startup" />
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/fetiwaetika/.gradle/caches/transforms-3/01096349b0936ba7f741e909295c017b/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+78            <meta-data
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+80                android:value="androidx.startup" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+81        </provider>
+82
+83        <receiver
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+85            android:directBootAware="false"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+86            android:enabled="true"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+87            android:exported="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+88            android:permission="android.permission.DUMP" >
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+91            </intent-filter>
+92            <intent-filter>
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+94            </intent-filter>
+95            <intent-filter>
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+97            </intent-filter>
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/fetiwaetika/.gradle/caches/transforms-3/4dbbd11a74d28bd64c37893cccf57482/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+100            </intent-filter>
+101        </receiver>
+102    </application>
+103
+104</manifest>

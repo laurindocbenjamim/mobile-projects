@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="20dp">
+
+        <!-- Top Header Bar: Marca Atue e Botão Configurações -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Identidade Atue com Ícone Glow Portal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivHeaderLogo"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvAppTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_atue"
+                        android:textColor="@color/text_primary"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvAppSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/subtitle_atue"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <!-- Botão Configurações -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnHeaderSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_pill_config"
+                android:paddingHorizontal="18dp"
+                android:text="@string/btn_settings"
+                android:textAllCaps="false"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                app:backgroundTint="@null"
+                app:cornerRadius="21dp"
+                app:icon="@drawable/ic_settings_gear"
+                app:iconPadding="8dp"
+                app:iconSize="18dp"
+                app:iconTint="@color/luminous_blue" />
+        </LinearLayout>
+
+        <!-- Card 1: Permissões -->
+        <include
+            android:id="@+id/cardPermissions"
+            layout="@layout/card_permissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Card 2: Avatar -->
+        <include
+            android:id="@+id/cardAvatar"
+            layout="@layout/card_avatar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+
+        <!-- Card 3: Widget flutuante -->
+        <include
+            android:id="@+id/cardWidget"
+            layout="@layout/card_widget_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+
+        <!-- Barra Inferior de Ações: Iniciar Widget e Parar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <!-- Botão Primário: Iniciar widget -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartWidget"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginEnd="14dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_pill_primary"
+                android:text="@string/btn_start_widget_action"
+                android:textAllCaps="false"
+                android:textColor="@color/text_dark_btn"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:cornerRadius="27dp"
+                app:icon="@drawable/ic_play_arrow"
+                app:iconPadding="10dp"
+                app:iconSize="22dp"
+                app:iconTint="@android:color/white" />
+
+            <!-- Botão Secundário: Parar -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStopWidget"
+                android:layout_width="220dp"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_pill_danger"
+                android:text="@string/btn_stop_widget_action"
+                android:textAllCaps="false"
+                android:textColor="@color/btn_stop_border"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:cornerRadius="27dp"
+                app:icon="@drawable/ic_stop_square"
+                app:iconPadding="8dp"
+                app:iconSize="18dp"
+                app:iconTint="@color/btn_stop_border" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

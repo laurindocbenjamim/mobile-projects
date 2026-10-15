@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+##############################################################################
+## Gradle start up script for UN*X
+##############################################################################
+APP_BASE_NAME=`basename "$0"`
+APP_HOME="`pwd -P`"
+
+# Check Java
+if [ -n "$JAVA_HOME" ] && [ -x "$JAVA_HOME/bin/java" ]; then
+    JAVACMD="$JAVA_HOME/bin/java"
+elif [ -x "/usr/local/opt/openjdk@17/bin/java" ]; then
+    export JAVA_HOME="/usr/local/opt/openjdk@17"
+    JAVACMD="/usr/local/opt/openjdk@17/bin/java"
+elif command -v java >/dev/null 2>&1 ; then
+    JAVACMD="java"
+else
+    echo "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH." >&2
+    exit 1
+fi
+
+WRAPPER_JAR="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+
+exec "$JAVACMD" "-Dorg.gradle.appname=$APP_BASE_NAME" -cp "$WRAPPER_JAR" org.gradle.wrapper.GradleWrapperMain "$@"

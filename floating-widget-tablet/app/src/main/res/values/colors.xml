@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Deep Navy & Modern Glassmorphism Palette -->
+    <color name="bg_dark">#080E1E</color>
+    <color name="surface_dark">#0F1B33</color>
+    <color name="surface_card">#162544</color>
+    <color name="surface_card_stroke">#293F6E</color>
+    <color name="primary_accent">#0084FF</color>
+    <color name="primary_accent_variant">#0060DF</color>
+    <color name="luminous_blue">#00D2FF</color>
+    <color name="luminous_blue_glow">#4D00D2FF</color>
+    <color name="secondary_accent">#7C3AED</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="status_camera_active">#00E676</color>
+    <color name="status_success">#10B981</color>
+    <color name="status_warning">#F59E0B</color>
+    <color name="status_error">#EF4444</color>
+    <color name="overlay_border">#00D2FF</color>
+    <color name="overlay_badge_bg">#D90A1324</color>
+    <color name="card_bg">#061225</color>
+    <color name="card_stroke">#18345E</color>
+    <color name="badge_icon_bg">#0A2244</color>
+    <color name="dot_granted">#00E676</color>
+    <color name="dot_pending">#FF5252</color>
+    <color name="btn_dark_navy">#081830</color>
+    <color name="btn_dark_stroke">#1B3E6E</color>
+    <color name="btn_stop_border">#FF2A55</color>
+    <color name="text_dark_btn">#061226</color>
+</resources>
+
